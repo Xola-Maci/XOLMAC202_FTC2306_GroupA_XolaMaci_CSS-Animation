@@ -1,0 +1,22 @@
+img{
+    height: 150px;
+    width: 200px;
+}
+
+@keyframes animatedSquare {
+    0%   {border-radius: 0%;}
+    25%  {border-radius: 100%;
+          transform: rotate(90deg);}
+    50%  {background-color: blue;
+          transform: rotate(180deg);}
+    100% {background-color: green;
+          transform: rotate(360deg);}
+  }
+
+  div {
+    width: 200px;
+    background-color: rgb(253, 8, 8);
+    animation-name: animatedSquare;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;     
+  } 
