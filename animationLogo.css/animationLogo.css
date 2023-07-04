@@ -1,9 +1,20 @@
 img{
     height: 150px;
-    width: 200px;
+    width: 300px;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    animation: changeColor 5s infinite;
+    
 }
 
-@keyframes animatedSquare {
+@keyframes changeColor{
+    0%{filter: hue-rotate(0deg);}
+    100%{filter: hue-rotate(360deg)}
+}
+
+
+@keyframes animatedSquare{
     0%   {border-radius: 0%;}
     25%  {border-radius: 100%;
           transform: rotate(90deg);}
@@ -14,9 +25,10 @@ img{
   }
 
   div {
-    width: 200px;
+
+    width: 100px;
     background-color: rgb(253, 8, 8);
     animation-name: animatedSquare;
     animation-duration: 5s;
     animation-iteration-count: infinite;     
-  } 
+  }
